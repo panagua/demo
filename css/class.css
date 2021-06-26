@@ -1,0 +1,38 @@
+/* css for Navigation */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111111;
+}
+/* EOC */
+
+.city {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.note {
+    color: black;
+}
+
+button {
+    margin-top: 5px;
+}

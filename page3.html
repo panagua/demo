@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tomson">
+    <meta http-equiv="refresh" content="10">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="favicon/favicon.ico">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <ul id="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/page2.html">page2</a></li>
+        <li><a href="/page3.html">page3</a></li>
+        <li><a href="/page4.html">page4</a></li>
+        <li><a href="/page5.html">page4</a></li>
+    </ul>
+
+    <!-- java script -->
+    <h1>Java Script</h1>
+    <h2 id="header1">Header</h2>
+    <button type="button" onclick="gantiheader()">Ganti Kata</button>
+    <script>
+        function gantiheader()
+        {
+            document.getElementById("header1").innerHTML="Berganti";
+        }
+            
+    </script>
+
+    <!-- File Path -->
+    <h1>File Path</h1>
+    <p>&ltimg src="picture.jpg"> means file is located in the same folder</p>
+    <p>&ltimg src="/img/picture.jpg"> means file is located in img folder in the current folder</p>
+    <p>&ltimg src="/img/picture.jpg> mean file is located in the image folder at the ROOT of the current web</p>
+    <p>&ltimg src="../picture.jpg> mean file is located in the folder ONE LEVEL UP from the current folder</p>
+    <img style="display: block; margin-left: auto; margin-right: auto;" src="img/ox.jpg" alt="ox logo">
+    <p style="text-align: center;"><i> this is a logo of an ox</i> </p>
+
+    <!-- Head Element -->
+    <h1>Head Element</h1>
+    <p>&lthead> is a container for the following elements: <span>title, style, meta, link, script, base</span> </p>
+
+
+
+</body>
+</html>

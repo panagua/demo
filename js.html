@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/js.css">
+    <link rel="shortcut icon" href="/favicon/golddollar.ico" type="image/x-icon">
+    <title></title>
+    <script src="/js/script.js" defer="true"></script>
+    <script src="https://unpkg.com/bowser@2.7.0/es5.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/page2.html">page2</a></li>
+        <li><a href="/page3.html">page3</a></li>
+        <li><a href="/page4.html">page4</a></li>
+        <li><a href="/form.html">Form</a></li>
+        <li><a href="/table.html">Table</a></li>
+        <li><a href="/css.html">CSS</a></li>
+        <li><a href="/grid.html">Grid</a></li>
+        <li><a href="/js.html">JavaScript</a></li>
+    </ul>
+    
+    <!-- Content -->
+    <h1 id="title">What Java Script do?</h1>
+    <p id="demo">JavaScript can change HTML content</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML="Hello JavaScript"'>ChangeText</button>
+    <button type="button" onclick='document.getElementById("demo").innerHTML="JavaScript can change HTML content"'>ChangeBack</button>
+    <button type="button" onclick='document.getElementById("demo").style.fontSize="35px"'>BigFont</button>
+    <button type="button" onclick='document.getElementById("demo").style.fontSize="16px"'>NormalSize</button>
+    <button type="button" onclick='document.getElementById("demo").style.display="none"'>Close</button>
+    <button type="button" onclick='document.getElementById("demo").style.display="block"'>Display</button>
+    <button type="button" onclick="warnamerah()">Color:RED</button>
+    <button type="button" onclick="warnahitam()">Color:Black</button>
+
+    <!-- conten display -->
+    <h2>JavaScript Display Possibilities</h2>
+    <ul>
+        <li>Writing into an HTML element, using 
+            <code>innerHTML</code>
+            <span id="inner"></span>
+            <script>document.getElementById("inner").innerHTML="Sesuatu";</script></li>
+        <li>Writing into the HTML output using <code>document.write()</code> <script>document.write(5+5);</script></li>
+        <li>Wrinting into an alert box, using <code>window.alet()</code> <button class="mini" type="button" onclick="notif()">Alert</button></li>
+        <li>Writing into the browser console using <code>console.log()</code></li>
+    </ul>
+    <div class="parent">
+        <div class="child">
+            <button type="button" onclick="tambah()">6 + 5</button>
+            <p id="hasil">Hasil = ?</p>
+        </div>
+        <div class="child">
+            <button type="button" onclick="demo_output1()">OutputVolvo</button>
+            <p id="demo3">Default</p>
+        </div>
+        <div class="child">
+            <button type="button" onclick="fungsi_tambah()">x= x+y;</button>
+            <p id="demoxy">Default</p>
+        </div>
+        <div class="child">
+            <button type="button" onclick="mobill()">ArrayMobil</button>
+            <p id="demo7">Default</p>
+        </div>
+    </div>
+    <div>
+        <h2>ArrayMobil</h2>
+        <p>cars=["toyota","mitsubisi","honda"] -> cars[0]="toyota"</p>
+    </div>
+    <div class="kotak1">
+        <p id="demo6">default</p>
+        <p id="demo10"></p>
+    </div>
+    <div class="kotak1 codex">
+        <!-- fungsi perkalian -->
+        <p id="demo8">default</p> 
+        <code class="code" id="demo9">default</code>
+    </div>
+    <div class="kotak1">
+        <p id="demo11"></p>
+    </div>
+    <div class="kotak1">
+        <p id="demo">txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ";</p>
+        <p id="demo12"></p>
+    </div>
+    <div class="kotak1">
+        <p id="demo">Please locate where 'locate' occurs!</p>
+        <p id="demo13"></p>
+        <p id="demo14"></p>
+    </div>
+    <div class="kotak1">
+        <button type="button" class="short" onclick="fungsi2()">ChangeName</button>
+        <p id="demo15"></p>
+    </div>
+    <div class="kotak1">
+        <button type="button" class="short" onclick="fungsi3()">Slice</button>
+        <p class="short">var var8="Apple, Banana, Kiwi";
+            var slice=var8.slice(7,13);</p>
+        <p id="demo16"></p>
+    </div>
+    <div class="kotak1">
+        <button type="button" class="short" onclick="
+        fungsi14()">pading string</button>
+        <p class="short" id="demo17">default</p>
+    </div>
+    <div class="kotak1">
+        <button type="button" class="short" onclick="fungsi15()">slice to *</button>
+        <p class="short" id="demo18">Tomson Panagua</p>
+        <p class="short" id="demo21">def</p>
+    </div>
+    <div class="kotak1">
+        <button type="button" class="short" onclick="fungsi19()">String Split</button>
+        <p class="short" id="demo19">Tomson Panagua</p>
+        <p class="short" id="demo20">def</p>
+    </div>
+    <div class="kotak1">
+        <p class="short" id="demo22"></p>
+        <p class="short" id="demo23"></p>
+        <p class="short" id="demo24"></p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="fungsi21()">Arr to List</button>
+        <p class="short">array cars to list</p>
+        <p class="short" id="demo25"></p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="fungsi26()">Arr to String</button>
+        <p class="short">array cars to list</p>
+        <p class="short" id="demo26"></p>
+        <p class="short" id="demo27"></p>
+        <p class="short" id="demo28">Splice</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="fungsi29()">concat Arr</button>
+        <p class="short" id="demo29"></p>
+        <p class="short" id="demo30"></p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="fungsi30()">Sort and reverse short</button>
+        <p class="short" id="demo31"></p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="fungsi31()">sortNumber</button>
+        <p class="short" id="demo32"></p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="fungsi33()">SortingObjkName</button>
+        <button class="short" type="button" onclick="fungsi34()">SortingObjkName</button>
+        <p class="short" id="demo33"></p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="fungsi35()">array forEach()</button>
+        <p class="short" id="demo351">default</p>
+        <p class="short" id="demo35">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="fungsi36()">array map(value*2)</button>
+        <p class="short" id="demo360">default</p>
+        <p class="short" id="demo361">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function37()">array filter(value>7)</button>
+        <p class="short" id="demo370">default</p>
+        <p class="short" id="demo371">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function38()">array reduce(total)</button>
+        <p class="short" id="demo380">default</p>
+        <p class="short" id="demo381">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function39()">Date Function</button>
+        <p class="short" id="demo390">default</p>
+        <p class="short" id="demo391">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function40()">Math function</button>
+        <p class="short" id="demo400">Math.PI</p>
+        <p class="short" id="demo401">round to nearest integer</p>
+        <p class="short" id="demo402">ceil (round up)</p>
+        <p class="short" id="demo403">floor (round down)</p>
+        <p class="short" id="demo404">trunc return to integer</p>
+    </div>
+    <div class="kotak2">
+        <button class="short" type="button" onclick="function41()">Math.random()</button>
+        <p class="short" id="demo410">random</p>
+        <p class="short" id="demo411">sorted</p>
+        <p class="short" id="demo412">boolean</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function42()">Switch</button>
+        <p class="short" id="demo420">default</p>
+        <p class="short" id="demo421">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function43()">for array</button>
+        <p class="short" id="demo430">default</p>
+        <p class="short" id="demo431">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function440()">While</button>
+        <button class="short" type="button" onclick="function441()">Do While</button>
+        <p class="short" id="demo440">While</p>
+        <p class="short" id="demo441">Do While</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function45()">cek object type</button>
+        <p class="short" id="demo450">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function46()">String() Number()</button>
+        <p class="short" id="demo460">default</p>
+        <p class="short" id="demo461">default</p>
+        <p class="short" id="demo462">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function47()">try catch</button>
+        <p class="short" id="demo470">default</p>
+    </div>
+    <div class="kotak1">
+        <label for="input480">Age : </label>
+        <input type="text" id="input480">
+        <button class="short" type="button" onclick="function48()">AgeCheck</button>
+        <p class="short" id="demo480">Input Your Age</p>
+    </div>
+    <div class="kotak1">
+        <label for="input000">Nama Depan : </label>
+        <input type="text" id="demo490" name="input000"><br>
+        <label for="input001">Nama Belakang : </label>
+        <input type="text" id="demo491" name="input001"><br>
+        <label for="input002">Umur : </label>
+        <input type="text" id="demo492" name="input002"><br>
+        <button class="short" type="button" onclick="function49()">Objek</button>
+        <p class="short" id="demo493">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function50()">var x = function () {}</button>
+        <p class="short" id="demo500">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function51()">Class</button>
+        <p class="short" id="demo510">default</p>
+        <p class="short" id="demo511">default</p>
+        <p class="short" id="demo512">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function52()">Class Age()</button>
+        <p class="short" id="demo520">default</p>
+        <p class="short" id="demo521">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function53()">JSON</button>
+        <p class="short" id="demo530">default</p>
+        <p class="short" id="demo531">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function54()">Time</button>
+        <p class="short" id="demo540">default</p>
+        <p class="short" id="demo541">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function55()">Object Get & Set</button>
+        <p class="short" id="demo550">Get</p>
+        <p class="short" id="demo551">Set</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function56()">Object defineProperty</button>
+        <p class="short" id="demo560">empty</p>
+        <p class="short" id="demo561">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function57()">setTimeout</button>
+        <p class="short" id="demo570">empty</p>
+        <p class="short" id="demo571">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function58()">Object</button>
+        <p class="short" id="demo580">empty</p>
+        <p class="short" id="demo581">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function59()">Nested Obect</button>
+        <p class="short" id="demo590" style="display: none;">0</p>
+        <p class="short" id="demo591">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function60()">cek i</button>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function61()">Object.value()</button>
+        <p class="short" id="demo610">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function62()">JSON.stringify()</button>
+        <p class="short" id="demo620">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function63()">Accessor / Getter & Setter()</button>
+        <p class="short" id="demo630">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function64()">Constructor</button>
+        <p class="short" id="demo640">empty</p>
+        <p class="short" id="demo641">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function65()">Constructor</button>
+        <p class="short" id="demo650">empty</p>
+        <p class="short" id="demo651">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function66()">Count</button>
+        <p class="short" id="demo660">JavaScript Closures</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function67()">Count</button>
+        <p class="short" id="demo670">CallBack</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function68()">CountDown setTimeout</button>
+        <p class="short" id="demo680">From 10</p>
+    </div>
+    <div class="kotak1">
+        <h2 style="text-align: center;">Waktu Sekarang</h2>
+        <h2 id="demo690" style="text-align: center;">loading...</h2>
+    </div>
+    <div class="kotak1">
+        <p><a href="google.com">google.com</a></p>
+    </div>
+    <div class="kotak2">
+        <button type="button" onclick="function70()">Loading</button>
+        <div id="load1">
+            <div id="load2"></div>
+        </div>
+    </div>
+    <div class="kotak1">
+        <h2 onclick="this.innerHTML = 'stop it senpai UwU'">Dont Click ME</h2>
+    </div>
+    <div class="kotak1">
+        <h2 onmouseover="function71(this)" onmouseout="function72(this)" style="background-color: bisque;">Mouse Hover & Mouse Out </h2>
+    </div>
+    <div class="kotak1">
+        <h2 onmousedown="function73(this)" onmouseup="function74(this)" style="background-color: bisque;">Mouse Down & Mouse Up</h2>
+        <p id="demo730"></p>
+    </div>
+    <div class="kotak1" id="myDIV" style="background-color: blanchedalmond;">
+        <button class="short" type="button" onclick="function75()">Remove EventListener</button>
+        <p class="short" id="demo750">default</p>
+        <p id="demo751">default</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function76()">Create New Child /Element</button>
+        <button class="short" type="button" onclick="function77()">Remove()</button>
+        <p id="demo760">firstChild</p>
+        <p id="removethis">REMOVE THIS</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function78()">closeWindows</button>
+        <p>asdf</p>
+        <p>asdf</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function79()">Back</button>
+        <button class="short" type="button" onclick="function80()">Forward</button>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function81()">Check Version</button>
+        <p class="short" id="demo810">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function82()">ConfirmPopUp</button>
+        <p class="short" id="demo820">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function83()">prompt</button>
+        <p class="short" id="demo830">empty</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="checkCookie()">setCookies</button>
+        <button class="short" type="button" onclick="deleteCookie()">deleteCookie</button>
+        <button class="short" type="button" onclick="displayCookies()">displayCookies</button>
+        <p class="short" id="demo840">default</p>
+    </div>
+    <div class="kotak2" style="height: 400px; overflow: auto;">
+        <button class="short" type="button" onclick="function85()">XMLHttpRequest</button>
+        <button class="short" type="button" onclick="close85()">CloseXHTMLRequest</button>
+        <p class="short" id="demo850">empty</p>
+    </div>
+    <div class="kotak2">
+        <button class="short" type="button" onclick="function86()">XMLHttpRequest</button>
+        <p class="short" id="demo860">empty</p>
+        <table id="table860" style="border: 1px solid black;;"></table>
+    </div>
+    <div class="kotak2">
+        <button class="short" type="button" onclick="function87()">jQuery byId</button>
+        <button class="short" type="button" onclick="function87a()">jQuery byTagName</button>
+        <p class="short" id="demo87a">Alfa</p>
+        <p class="short" id="demo87b">Brafo</p>
+        <p class="short" id="demo87c">Charlie</p>
+        <p class="short" id="demo87d">Delta</p>
+        <p>Finding by Class $(".class")</p>
+        <p>Finding by CSS Selector $("p.class")</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function88()">GetText and ShowText</button>
+        <p id="demo880">This is GetText</p>
+        <p id="demo881">This is ShowText</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function89()">innerHTML change</button>
+        <div id="demo89a">This is a &ltdiv></div>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function90()">LocalStorage Name</button>
+        <p class="short" id="demo90a">Show Storage</p>
+    </div>
+    <div class="kotak1">
+        <button class="short" type="button" onclick="function91()">RunWorker</button>
+        <button class="short" type="button" onclick="function91a()">StopWorker</button>
+        <p class="short" id="demo91a">show value</p>
+    </div>
+</body>
+</html>

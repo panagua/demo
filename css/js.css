@@ -1,0 +1,118 @@
+/* css for Navigation */
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+.nav li{
+    float: left;
+}
+.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+.nav li a:hover {
+    background-color: #111111;
+}
+/* EOL */
+
+/* button */
+button {
+    min-width: 100px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(57, 92, 94);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+button:hover {
+    background-color: rgb(50, 166, 170);
+}
+button:active {
+    background-color: darkgreen;
+}
+.mini {
+    padding: 0px;
+    background-color: white;
+    color: red;
+    margin: 0px;
+    border: 1px solid red;
+}
+
+/* code */
+code {
+    background-color: rgb(231, 228, 228);
+    color: royalblue;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+
+/* parent -child */
+.parent:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.child {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    height: 80px;
+}
+.kotak1 {
+    border: 1px dashed black;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    width: 45%;
+    overflow: auto;
+    float: left;
+    height: auto;
+}
+[id^="demo"] {
+    margin: 5px;
+}
+.short {
+    padding: 4px;
+    margin: 0;
+}
+.kotak2 {
+    border: 1px dashed black;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    width: 97%;
+    overflow: auto;
+    float: left;
+    height: auto;
+}
+#load1 {
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    width: 97%;
+    height: 20px;
+    position: -1;
+}
+#load2 {
+    background-color: teal;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    width: 1%;
+    height: 20px;
+    color: black;
+}
